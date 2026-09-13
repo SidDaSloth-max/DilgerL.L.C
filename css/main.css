@@ -3,9 +3,9 @@
   --brand-dark-2: #16283f;
   --brand-primary: #2563eb;
   --brand-primary-dark: #1d4ed8;
-  --brand-accent: #c2410c;
-  --brand-accent-dark: #9a3412;
-  --brand-accent-light: #fb923c;
+  --brand-accent: #326e8f;
+  --brand-accent-dark: #244f68;
+  --brand-accent-light: #b9d9eb;
   --text-main: #111827;
   --text-muted: #4b5563;
   --bg-light: #f8fafc;
@@ -128,12 +128,12 @@ nav.main-nav a:hover { color: var(--brand-accent-light); }
   display: inline-block;
   border: none;
   cursor: pointer;
-  box-shadow: 0 6px 20px rgba(194, 65, 12, 0.35);
+  box-shadow: 0 6px 20px rgba(50, 110, 143, 0.35);
   transition: all 0.3s ease;
 }
 .btn-primary:hover {
   background: var(--brand-accent-dark);
-  box-shadow: 0 8px 28px rgba(194, 65, 12, 0.5);
+  box-shadow: 0 8px 28px rgba(50, 110, 143, 0.5);
   transform: translateY(-2px);
 }
 .btn-secondary {
@@ -497,7 +497,7 @@ p.section-sub {
   text-align: center;
 }
 .form-status.success { color: #15803d; }
-.form-status.error { color: #c2410c; }
+.form-status.error { color: #dc2626; }
 
 /* Final CTA */
 .cta-section {
