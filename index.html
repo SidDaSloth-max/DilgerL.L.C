@@ -97,6 +97,97 @@
     </div>
   </section>
 
+  <!-- Portfolio teaser -->
+  <section class="portfolio-section" id="portfolio">
+    <div class="container">
+      <h2 class="section-title">Recent Work</h2>
+      <p class="section-sub">A look at real sites we've built and optimized for clients.</p>
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <div class="browser-mock" style="--card-color-1:#2563eb; --card-color-2:#0f1b2d;">
+            <div class="browser-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url-pill">alexscordsbundles.com</span></div>
+            <div class="mock-body">
+              <div class="mock-name">Alex's Cords &amp; Bundles</div>
+              <div class="mock-niche">Firewood Supplier &middot; Bothell, WA</div>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <h3>Alex's Cords and Bundles</h3>
+            <div class="portfolio-tags"><span>Local SEO</span><span>Website Design</span><span>Location Pages</span></div>
+            <p>A multi-page local SEO site for a firewood delivery business, with service pages, city-specific location pages, schema markup, and call-click tracking.</p>
+            <a class="portfolio-link" href="portfolio.html">See full case study &rarr;</a>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="browser-mock" style="--card-color-1:#0f1b2d; --card-color-2:#326e8f;">
+            <div class="browser-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url-pill">in development</span></div>
+            <div class="mock-body">
+              <div class="mock-name">Dilger Custom Cabinetry</div>
+              <div class="mock-niche">Custom Cabinetry</div>
+            </div>
+          </div>
+          <div class="portfolio-body">
+            <span class="portfolio-status">In Progress</span>
+            <h3>Dilger Custom Cabinetry</h3>
+            <div class="portfolio-tags"><span>Website Design</span><span>SEO</span></div>
+            <p>A website currently in development for a custom cabinetry business, built with the same SEO-first approach as every Dilger L.L.C. project.</p>
+            <a class="portfolio-link" href="portfolio.html">See full case study &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact-form-section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get a Free SEO Audit</h2>
+      <p class="section-sub">Tell us about your business and current website (if you have one), and we'll get back to you within one business day.</p>
+      <form class="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" id="contactFormEl">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hidden-field" aria-hidden="true">
+          <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+        </p>
+        <div class="form-group">
+          <label for="contact-name">Name</label>
+          <input type="text" id="contact-name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-business">Business Name</label>
+          <input type="text" id="contact-business" name="business">
+        </div>
+        <div class="form-group">
+          <label for="contact-email">Email</label>
+          <input type="email" id="contact-email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-phone">Phone (optional)</label>
+          <input type="tel" id="contact-phone" name="phone">
+        </div>
+        <div class="form-group">
+          <label for="contact-website">Current Website (if any)</label>
+          <input type="text" id="contact-website" name="website" placeholder="e.g. yourbusiness.com">
+        </div>
+        <div class="form-group">
+          <label for="contact-interest">What are you interested in?</label>
+          <select id="contact-interest" name="interest">
+            <option>SEO Services</option>
+            <option>Website Design</option>
+            <option>Rank &amp; Rent Lead Generation</option>
+            <option>Google Business Profile Management</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+      <p class="form-status" id="contactFormStatus" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+
   <!-- Services -->
   <section class="services-section" id="services">
     <div class="container">
@@ -188,47 +279,6 @@
     </div>
   </section>
 
-  <!-- Portfolio teaser -->
-  <section class="portfolio-section" id="portfolio">
-    <div class="container">
-      <h2 class="section-title">Recent Work</h2>
-      <p class="section-sub">A look at real sites we've built and optimized for clients.</p>
-      <div class="portfolio-grid">
-        <div class="portfolio-card">
-          <div class="browser-mock" style="--card-color-1:#2563eb; --card-color-2:#0f1b2d;">
-            <div class="browser-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url-pill">alexscordsbundles.com</span></div>
-            <div class="mock-body">
-              <div class="mock-name">Alex's Cords &amp; Bundles</div>
-              <div class="mock-niche">Firewood Supplier &middot; Bothell, WA</div>
-            </div>
-          </div>
-          <div class="portfolio-body">
-            <h3>Alex's Cords and Bundles</h3>
-            <div class="portfolio-tags"><span>Local SEO</span><span>Website Design</span><span>Location Pages</span></div>
-            <p>A multi-page local SEO site for a firewood delivery business, with service pages, city-specific location pages, schema markup, and call-click tracking.</p>
-            <a class="portfolio-link" href="portfolio.html">See full case study &rarr;</a>
-          </div>
-        </div>
-        <div class="portfolio-card">
-          <div class="browser-mock" style="--card-color-1:#0f1b2d; --card-color-2:#326e8f;">
-            <div class="browser-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url-pill">in development</span></div>
-            <div class="mock-body">
-              <div class="mock-name">Dilger Custom Cabinetry</div>
-              <div class="mock-niche">Custom Cabinetry</div>
-            </div>
-          </div>
-          <div class="portfolio-body">
-            <span class="portfolio-status">In Progress</span>
-            <h3>Dilger Custom Cabinetry</h3>
-            <div class="portfolio-tags"><span>Website Design</span><span>SEO</span></div>
-            <p>A website currently in development for a custom cabinetry business, built with the same SEO-first approach as every Dilger L.L.C. project.</p>
-            <a class="portfolio-link" href="portfolio.html">See full case study &rarr;</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Reviews (empty state, no fabricated reviews) -->
   <section class="reviews-section" id="reviews">
     <div class="container">
@@ -247,56 +297,6 @@
           <a href="tel:+13603164776" class="btn-primary" onclick="trackCall('reviews_phone_button')">Call Us Today</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Contact Form -->
-  <section class="contact-form-section" id="contact">
-    <div class="container">
-      <h2 class="section-title">Get a Free SEO Audit</h2>
-      <p class="section-sub">Tell us about your business and current website (if you have one), and we'll get back to you within one business day.</p>
-      <form class="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" id="contactFormEl">
-        <input type="hidden" name="form-name" value="contact">
-        <p class="hidden-field" aria-hidden="true">
-          <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
-        </p>
-        <div class="form-group">
-          <label for="contact-name">Name</label>
-          <input type="text" id="contact-name" name="name" required>
-        </div>
-        <div class="form-group">
-          <label for="contact-business">Business Name</label>
-          <input type="text" id="contact-business" name="business">
-        </div>
-        <div class="form-group">
-          <label for="contact-email">Email</label>
-          <input type="email" id="contact-email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="contact-phone">Phone (optional)</label>
-          <input type="tel" id="contact-phone" name="phone">
-        </div>
-        <div class="form-group">
-          <label for="contact-website">Current Website (if any)</label>
-          <input type="text" id="contact-website" name="website" placeholder="e.g. yourbusiness.com">
-        </div>
-        <div class="form-group">
-          <label for="contact-interest">What are you interested in?</label>
-          <select id="contact-interest" name="interest">
-            <option>SEO Services</option>
-            <option>Website Design</option>
-            <option>Rank &amp; Rent Lead Generation</option>
-            <option>Google Business Profile Management</option>
-            <option>Not sure yet</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="contact-message">Message</label>
-          <textarea id="contact-message" name="message" rows="5"></textarea>
-        </div>
-        <button type="submit" class="btn-primary">Send Message</button>
-      </form>
-      <p class="form-status" id="contactFormStatus" role="status" aria-live="polite"></p>
     </div>
   </section>
 
