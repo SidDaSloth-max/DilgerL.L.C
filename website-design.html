@@ -22,13 +22,21 @@
 <meta property="og:url" content="https://dilgerllc.com/website-design.html">
 <meta property="og:image" content="https://dilgerllc.com/images/og-image.png">
 <meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Dilger L.L.C.">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Dilger L.L.C. SEO and website design services">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Website Design &amp; Development | Dilger L.L.C.">
 <meta name="twitter:description" content="Fast, mobile-first website design with SEO built in from the start.">
 <meta name="twitter:image" content="https://dilgerllc.com/images/og-image.png">
+<meta name="twitter:image:alt" content="Dilger L.L.C. SEO and website design services">
 
-<link rel="icon" href="/favicon.png" type="image/png">
+<meta name="theme-color" content="#0f1b2d">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon-96x96.png" type="image/png" sizes="96x96">
+<link rel="icon" href="/favicon-192x192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 <script type="application/ld+json">
@@ -42,18 +50,30 @@
   "description": "Fast, mobile-first website design for small businesses, with SEO, performance, and accessibility built in from the start."
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dilgerllc.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://dilgerllc.com/services.html" },
+    { "@type": "ListItem", "position": 3, "name": "Website Design", "item": "https://dilgerllc.com/website-design.html" }
+  ]
+}
+</script>
 <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<a class="skip-link" href="#top">Skip to main content</a>
 
 <header class="site-header">
   <div class="header-inner">
-    <a href="index.html" class="brand">
-      <img class="brand-logo" src="images/logo-icon.png" alt="Dilger L.L.C. logo" width="42" height="42">
+    <a href="/" class="brand">
+      <img class="brand-logo" src="images/logo-icon.png" alt="" width="42" height="42">
       Dilger <span>L.L.C.</span>
     </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
-    <nav class="main-nav" id="mainNav">
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-controls="mainNav" aria-expanded="false">&#9776;</button>
+    <nav class="main-nav" id="mainNav" aria-label="Main">
       <a href="services.html">Services</a>
       <a href="portfolio.html">Portfolio</a>
       <a href="about.html">About</a>
@@ -67,7 +87,7 @@
 
   <section class="page-hero">
     <div class="container">
-      <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo; <a href="services.html">Services</a> &rsaquo; Website Design</p>
+      <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="services.html">Services</a> &rsaquo; Website Design</p>
       <h1>Website Design &amp; Development Services</h1>
       <p class="subhead">Fast, mobile-first websites built to convert visitors into calls and leads &mdash; with SEO built in from day one, not bolted on afterward.</p>
       <div class="hero-ctas">
@@ -137,11 +157,12 @@
     <div class="footer-nap">
       <strong>Dilger L.L.C.</strong><br>
       Serving small businesses nationwide, U.S.A.<br>
-      (360) 316-4776
+      <a href="tel:+13603164776" onclick="trackCall('footer_phone_button')">(360) 316-4776</a><br>
+      <a href="mailto:dilgerseo@gmail.com">dilgerseo@gmail.com</a>
     </div>
 
     <nav class="footer-sitemap" aria-label="Site links">
-      <a href="index.html">Home</a>
+      <a href="/">Home</a>
       <a href="services.html">Services</a>
       <a href="seo-services.html">SEO Services</a>
       <a href="website-design.html">Website Design</a>
@@ -155,11 +176,11 @@
     </nav>
 
     <div class="footer-bottom">
-      &copy; <span id="year"></span> Dilger L.L.C. All rights reserved.
+      &copy; <span id="year">2026</span> Dilger L.L.C. All rights reserved.
     </div>
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>

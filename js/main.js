@@ -1,31 +1,32 @@
 // Mobile nav toggle
 var navToggle = document.getElementById('navToggle');
 var mainNav = document.getElementById('mainNav');
-navToggle.addEventListener('click', function () {
-  var isOpen = mainNav.classList.toggle('open');
-  navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-});
+if (navToggle && mainNav) {
+  navToggle.addEventListener('click', function () {
+    var isOpen = mainNav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
 
-// Close mobile nav after clicking a link
-mainNav.querySelectorAll('a').forEach(function (link) {
-  link.addEventListener('click', function () { mainNav.classList.remove('open'); });
-});
+  // Close the menu after choosing a link
+  mainNav.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      mainNav.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Escape closes the menu and returns focus to the toggle
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && mainNav.classList.contains('open')) {
+      mainNav.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.focus();
+    }
+  });
+}
 
 var yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
-
-// Fade the nav in once the user scrolls past the top of the hero
-var siteHeader = document.querySelector('.site-header');
-function updateHeaderVisibility() {
-  if (window.scrollY > 80) {
-    siteHeader.classList.add('visible');
-  } else {
-    siteHeader.classList.remove('visible');
-    mainNav.classList.remove('open');
-  }
-}
-window.addEventListener('scroll', updateHeaderVisibility, { passive: true });
-updateHeaderVisibility();
 
 // GA4 event tracking
 function trackCall(label) {
@@ -34,9 +35,10 @@ function trackCall(label) {
   }
 }
 
+// GA4's enhanced measurement auto-collects an event named form_submit, so the lead event uses GA4's recommended generate_lead name instead.
 function trackFormSubmit(label) {
   if (typeof gtag === 'function') {
-    gtag('event', 'form_submit', { event_category: 'engagement', event_label: label });
+    gtag('event', 'generate_lead', { event_category: 'engagement', event_label: label });
   }
 }
 
