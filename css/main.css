@@ -592,3 +592,7 @@ footer.site-footer {
   .nav-toggle { display: block; }
   header.site-header { position: sticky; }
 }
+
+/* Legal pages (privacy / terms) */
+.legal h2 { font-size: 1.3rem; margin: 2rem 0 12px; }
+.legal .box { background: var(--bg-light); border-left: 4px solid var(--brand-primary); padding: 12px 16px; margin: 1rem 0; color: var(--text-muted); }
